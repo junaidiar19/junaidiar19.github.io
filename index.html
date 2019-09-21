@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="logo-icon.png" rel="icon">
+  <link href="logo-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main-timeline.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+<?php include "koneksi.php";?>
+
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">My Portofolio</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#service">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#portfolio">Porject</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/junaidi-abdul-rahman-207b27151/">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(back.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h3 class="intro-title mb-4">I am Junaidi Abdul Rahman</h3>
+          <p class="intro-subtitle"><span class="text-slider-items">Web Developer,Frontend Developer,Backend Developer</span><strong class="text-slider"></strong></p>
+          <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#service" role="button"><i class="fa fa-arrow-down"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  <!--/ Section Services Star /-->
+  <section id="service" class="services-mf route mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              SKILL
+            </h3>
+            <p class="subtitle-a">
+              <i>This is about my skill</i>
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+  <!-- <?php
+$sql   = "SELECT * FROM skill";
+$query = mysqli_query($koneksi, $sql) or die(mysqli_error());
+while ($data = mysqli_fetch_array($query)) {
+    ?>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title"><?php echo $data['skill'] ?></h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                <?php echo $data['percent'] ?>%
+              </p>
+            </div>
+          </div>
+        </div>
+<?php }?> -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">HTML</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                85%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">CSS</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                75%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">PHP</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                73%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">JAVASCRIPT</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                78%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">JQUERY</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                84%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">JAVA</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                70%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">BOOTSTRAP</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                90%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">CODEIGNITER</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                80%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">LARAVEL</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                60%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">MYSQL</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                80%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">MATERIALIZE</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                60%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">ANDROID STUDIO</h2>
+              <p class="s-description text-center" style="font-size: 26px;">
+                50%
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--/ Section Services End /-->
+
+  <!--/ Section Portfolio Star /-->
+  <section id="portfolio" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              PROJECT
+            </h3>
+            <p class="subtitle-a">
+              <i>This is about my project</i>
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+<!-- <?php
+$sql   = "SELECT * FROM project";
+$query = mysqli_query($koneksi, $sql) or die(mysqli_error());
+while ($data = mysqli_fetch_array($query)) {
+    ?>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="images/project/<?php echo $data['foto'] ?>" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/<?php echo $data['foto'] ?>" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title"><?php echo $data['nama'] ?></h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, </i></span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+<?php }?> -->
+       <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/Manajemen K13.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/Manajemen K13.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Aplikasi Manajemen Kurikulum 2013 SDN Pasar Lama 6 Banjarmasin</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, Materialize Design, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/E-Learning.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/E-Learning.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Sistem E-Learning Politeknik Hasnur (Ujian Online, Upload Tugas, Repository Materi) </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, Materialize CSS, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/Perpustakaan.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/Perpustakaan.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Aplikasi Perpustakaan SMAN 12 Banjarmasin</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, Admindek Template, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/Elektro.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/Elektro.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Website Penjualan Bahan Elektronik</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, PHP, Bootstrap, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/Jadwal Mengajar.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/Jadwal Mengajar.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Aplikasi Kepegawaian dan Jadwal Mengajar SMAN 12 Banjarmasin</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, Bootstrap, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/Home User Evoting.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/Home User Evoting.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Aplikasi E-Voting Pemilihan (Ketua Osis, Kepala Desa, Ketua  BEM)</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>QR Code Scan, Codeigniter, Admin LTE</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/Toko Bahan Bangunan.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/Toko Bahan Bangunan.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Aplikasi Manajemen Penjualan Bahan Bangunan Toko Mentaya Banjarmasin</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>SMS Gateway, Codeigniter, Materialize CSS</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/Aplikasi Penjualan.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/Aplikasi Penjualan.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Aplikasi Manajemen Penjualan Bahan Sparepart PT. Rezeki Cahya AMHA</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, Bootstrap, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/SPK.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/SPK.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Sistem Pendukung Keputusan Kepala Desa Menggunakan Metode WP (Weighted Product)</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, Bootstrap, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/Admin PMB.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/Admin PMB.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Website Admin Penerimaan Mahasiswa Baru Politeknik Hasnur</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, PHP, Admin LTE, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/home fashion.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/home fashion.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Website Penjualan Baju Fashion Pria</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, PHP, Bootstrap, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/PH.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/PH.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Official Website Kampus Politeknik Hasnur</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, PHP, Mysql</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/anggotaperpus.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/anggotaperpus.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Formulir Pendaftaran Anggota Perpustakaan Politeknik Hasnur</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Codeigniter, Jquery Validation, Generate Barcode</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+        <div class="work-box">
+            <a href="images/project/pilkades.PNG" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="images/project/pilkades.PNG" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h2 class="w-title">Aplikasi Pemilihan Kepala Desa Baruta Analai, Sulawesi Tenggara</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Based</span> / <span class="w-date"><i>Login with - QR Code Scan, Codeigniter, Connected to KPU Daerah - Kantor Kecamatan</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--/ Section Portfolio End /-->
+
+  <!--/ Section Portfolio Star /-->
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              ABOUT
+            </h3>
+            <p class="subtitle-a">
+              <i> This is about me</i>
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-shadow-full">
+           <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline7">
+                        <div class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-graduation-cap"></i></div>
+                            <span class="year">2004 - 2010</span>
+                            <div class="timeline-content">
+                                <h5 class="title">Sekolah Dasar</h5>
+                                <p class="description">
+                                    SD Negeri Putat Basiun
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-graduation-cap"></i></div>
+                            <span class="year">2011 - 2013</span>
+                            <div class="timeline-content">
+                                <h5 class="title">Madrasah Tsanawiyah</h5>
+                                <p class="description">
+                                    MTs Negeri 1 Awayan
+                                </p><br><br>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-graduation-cap"></i></div>
+                            <span class="year">2014 - 2016</span>
+                            <div class="timeline-content">
+                                <h5 class="title">Sekolah Menengah Kejuruan</h5>
+                                <p class="description">
+                                    SMK Negeri 1 Batumandi <br> Jurusan Teknik Komputer & Jaringan
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-icon"><i class="fa fa-graduation-cap"></i></div>
+                            <span class="year">2016 - 2019</span>
+                            <div class="timeline-content">
+                                <h5 class="title">Perguruan Tinggi</h5>
+                                <p class="description">
+                                    Politeknik Hasnur <br> Jurusan Teknik Informatika
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+              <a href="Curriculum Vitae.docx" class="btn btn-primary btn-block">Download My Cv</a>
+            </div>
+            </div>
+
+    </div>
+  </section>
+  <!--/ Section Portfolio End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>Junaidi Abdul Rahman</strong> 2019</p>
+              <div class="credits">
+                Email : <a href="mailto:junaidiar.fcb@gmail.com">junaidiar.fcb@gmail.com</a> |
+                Telepon : <a href="#!">0823 5210 6596</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="assets/lib/jquery/jquery.min.js"></script>
+  <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="assets/lib/popper/popper.min.js"></script>
+  <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/lib/easing/easing.min.js"></script>
+  <script src="assets/lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="assets/lib/counterup/jquery.counterup.js"></script>
+  <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
+  <script src="assets/lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="assets/contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
