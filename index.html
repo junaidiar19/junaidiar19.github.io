@@ -238,8 +238,14 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    const apiProject = "http://localhost/junaidiar19.github.io/api/project.js";
-    const apiSkill = "http://localhost/junaidiar19.github.io/api/skill.js";
+    if (location.protocol !== 'https:') {
+      const BASE_URL = 'https://junaidiar19.github.io/';
+    } else {
+      const BASE_URL = 'http://localhost/junaidiar19.github.io';
+    }
+
+    const apiProject = BASE_URL + "/api/project.js";
+    const apiSkill = BASE_URL + "/api/skill.js";
 
     async function getApiProject(url) {
         const response = await fetch(url);
