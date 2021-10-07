@@ -238,7 +238,7 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    const BASE_URL = (location.protocol !== 'https:') ? 'https://junaidiar19.github.io/' : 'http://localhost/junaidiar19.github.io/';
+    const BASE_URL = (location.protocol === 'https:') ? 'https://junaidiar19.github.io/' : 'http://localhost/junaidiar19.github.io/';
 
     const apiProject = BASE_URL + "api/project.php";
     const apiSkill = BASE_URL + "api/skill.php";
@@ -246,7 +246,6 @@
     async function getApiProject(url) {
         const response = await fetch(url);
         var data = await response.json();
-        console.log(data);
         showProject(data);
     }
 
