@@ -238,11 +238,7 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    if (location.protocol !== 'https:') {
-      const BASE_URL = 'https://junaidiar19.github.io/';
-    } else {
-      const BASE_URL = 'http://localhost/junaidiar19.github.io';
-    }
+    const BASE_URL = (location.protocol !== 'https:') ? 'https://junaidiar19.github.io/' : 'http://localhost/junaidiar19.github.io';
 
     const apiProject = BASE_URL + "/api/project.js";
     const apiSkill = BASE_URL + "/api/skill.js";
