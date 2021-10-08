@@ -237,81 +237,8 @@
   <!-- Template Main Javascript File -->
   <script src="assets/js/main.js"></script>
 
-  <script>
-    const BASE_URL = (location.protocol === 'https:') ? 'https://junaidiar19.github.io/' : 'http://localhost/junaidiar19.github.io/';
-
-    const apiProject = BASE_URL + "api/project.php";
-    const apiSkill = BASE_URL + "api/skill.php";
-
-    async function getApiProject(url) {
-        const response = await fetch(url);
-        var data = await response.json();
-        showProject(data);
-    }
-
-    getApiProject(apiProject);
-
-    function showProject(data) {
-      let html = '';
-        for (let d of data) {
-          html += `
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="${d.image}" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="${d.image}" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <h6>${d.name}</h6>
-                      <div class="w-more">
-                        <span class="w-ctegory">${d.based}</span> / <span class="w-date"><i>${d.technology}</i></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          `;
-        }
-
-        document.getElementById("projectData").innerHTML = html;
-    }
-
-    async function getApiSkill(url) {
-        const response = await fetch(url);
-        var data = await response.json();
-        showSkill(data);
-    }
-
-    getApiSkill(apiSkill);
-
-    function showSkill(data) {
-      let html = '';
-      for (let d of data) {
-        html += `
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-ico">
-              <span class="ico-circle"><i class="ion-code-working"></i></span>
-            </div>
-            <div class="service-content">
-              <h2 class="s-title">${d.name}</h2>
-              <p class="s-description text-center" style="font-size: 26px;">
-                ${d.percentage}%
-              </p>
-            </div>
-          </div>
-        </div>
-        `;
-      }
-
-      document.getElementById("skillData").innerHTML = html;
-
-    }
-  </script>
+ <script src="js/project.js"></script>
+ <script src="js/skill.js"></script>
 
 </body>
 </html>
