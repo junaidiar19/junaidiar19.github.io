@@ -209,7 +209,7 @@ function showProject(data) {
             <div class="work-box">
                 <a href="${d.image}" data-lightbox="gallery-mf">
                 <div class="work-img">
-                    <img src="${d.image}" alt="" class="img-fluid">
+                    <img src="${d.image}" alt="" loading="lazy" class="img-fluid">
                 </div>
                 <div class="work-content">
                     <div class="row">
