@@ -62,7 +62,7 @@ function showSkill(data) {
             </div>
             <div class="service-content">
                 <h2 class="s-title">${d.name}</h2>
-                <p class="s-description text-center" style="font-size: 26px;">
+                <p class="s-description text-center mb-0" style="font-size: 26px;">
                 ${d.percentage}%
                 </p>
             </div>
